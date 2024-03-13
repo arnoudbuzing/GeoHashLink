@@ -1,0 +1,426 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     15995,        416]
+NotebookOptionsPosition[     11730,        325]
+NotebookOutlinePosition[     14027,        382]
+CellTagsIndexPosition[     13942,        377]
+WindowTitle->GeoHashDecode
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[GridBox[{
+   {GridBox[{
+      {
+       ItemBox[Cell[BoxData[
+         RowBox[{
+          TemplateBox[{12},
+           "Spacer1"], Cell[
+          "WOLFRAM EXTERNAL FUNCTIONS/ GEO HASH LINK SYMBOL", "PacletNameCell",
+           TextAlignment->Center,ExpressionUUID->
+           "fcb8e975-1b65-4981-9835-29940bc533f2"], 
+          TemplateBox[{8},
+           "Spacer1"]}]],
+         TextAlignment->Center,ExpressionUUID->
+         "803c24b8-f773-4bf1-aff0-d483551c0e97"],
+        Background->RGBColor[0.490196, 0.576471, 0.690196],
+        ItemSize->Full], ""}
+     },
+     GridBoxAlignment->{"Rows" -> {{Center}}},
+     GridBoxItemSize->{"Columns" -> {Full, 
+         Scaled[0.02]}, "Rows" -> {{2.5}}}], Cell[TextData[Cell[BoxData[
+     TagBox[
+      ActionMenuBox[
+       FrameBox[Cell[TextData[{
+         "URL",
+         " ",
+         Cell[BoxData[
+          GraphicsBox[
+           {GrayLevel[0.66667], Thickness[0.13], 
+            LineBox[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]},
+           AspectRatio->1,
+           ImageSize->20,
+           PlotRange->{{-3, 4}, {-1, 1}}]],ExpressionUUID->
+          "30d16930-2ca1-446c-8958-923b24940432"]
+        }],ExpressionUUID->"a658bd22-4048-493f-afb0-53655e938d67"],
+        StripOnInput->False],{
+       "\"WolframExternalFunctions/GeoHashLink/ref/GeoHashDecode\"" :> None, 
+        "\"Copy Wolfram Documentation Center URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell["WolframExternalFunctions/GeoHashLink/ref/GeoHashDecode"]},
+               Visible -> False]]; 
+          SelectionMove[DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], Delimiter, 
+        "\"Copy web URL\"" :> 
+        Module[{DocumentationSearch`Private`nb$}, 
+          DocumentationSearch`Private`nb$ = 
+           NotebookPut[
+            Notebook[{
+              Cell[BoxData[
+                MakeBoxes[
+                 Hyperlink[
+                  "http://reference.wolfram.com/language/\
+WolframExternalFunctions/GeoHashLink/ref/GeoHashDecode.html"], StandardForm]],
+                 "Input", TextClipboardType -> "PlainText"]}, Visible -> 
+              False]]; SelectionMove[
+           DocumentationSearch`Private`nb$, All, Notebook]; 
+          FrontEndTokenExecute[DocumentationSearch`Private`nb$, "Copy"]; 
+          NotebookClose[DocumentationSearch`Private`nb$]; Null], 
+        "\"Go to web URL\"" :> 
+        FrontEndExecute[{
+          NotebookLocate[{
+            URL[If[TrueQ[False], 
+                "http://reference.wolfram.com/system-modeler/", 
+                "http://reference.wolfram.com/language/"] <> 
+              "WolframExternalFunctions/GeoHashLink/ref/GeoHashDecode" <> 
+              ".html"], None}]}]},
+       Appearance->None,
+       MenuAppearance->Automatic,
+       MenuStyle->"URLMenu"],
+      MouseAppearanceTag["LinkHand"]]],
+     LineSpacing->{1.4, 0},ExpressionUUID->
+     "66f9b613-7f2d-4161-9631-b107f4f7db22"]], "AnchorBar",
+     CacheGraphics->False,ExpressionUUID->
+     "83bb9049-719a-4b1a-90a6-8fd303f6b501"]}
+  }]], "AnchorBarGrid",
+ GridBoxOptions->{GridBoxItemSize->{"Columns" -> {
+     Scaled[0.65], {
+      Scaled[0.34]}}, "ColumnsIndexed" -> {}, "Rows" -> {{1.}}, 
+   "RowsIndexed" -> {}}},
+ CellID->1,ExpressionUUID->"3b6c74ef-1e8d-4243-a5d4-293e77ef54fc"],
+
+Cell["WolframExternalFunctions`GeoHashLink`", "ContextNameCell",ExpressionUUID->"6285039d-fa31-4eb2-add4-6d21ed5b38b5"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[GridBox[{
+   {Cell[TextData[{
+     Cell[
+     "GeoHashDecode", "ObjectName",ExpressionUUID->
+      "39b9b4c6-fa8d-4a17-980e-1bb280b63ca0"],
+     Cell[BoxData[
+      TemplateBox[{8},
+       "Spacer1"]],ExpressionUUID->"14eec8f5-9961-4c2d-a80c-195c7aa88063"],
+     Cell[BoxData[
+     ""], "ObjectNameTranslation",ExpressionUUID->
+      "827c0c39-eb8a-40c9-8536-0e29baf04cbc"]
+    }],ExpressionUUID->"b42e3f9e-48db-4114-ad13-861c210eabe3"], 
+    "\[SpanFromLeft]"}
+  }]], "ObjectNameGrid",ExpressionUUID->"6653dc57-179d-41c2-af65-\
+fec763e85f49"],
+
+Cell[BoxData[GridBox[{
+   {"", Cell[TextData[{
+     Cell[BoxData[
+      RowBox[{
+       TemplateBox[{
+         Cell[
+          TextData["GeoHashDecode"]], 
+         "paclet:WolframExternalFunctionsGeoHashLink/ref/GeoHashDecode", 
+         "WolframExternalFunctionsGeoHashLink Package Symbol"},
+        "PackageLink",
+        BaseStyle->"InlineFormula"], "[", 
+       StyleBox["hash", "TI"], "]"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "0a981cf0-2dde-4e8f-84ff-5ec97274d23a"],
+     "\[LineSeparator]decodes a geohash string into a ",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["GeoPosition"]], "paclet:ref/GeoPosition"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "264e6c10-25e2-4951-aa11-abd82bb0b7b4"],
+     " object and a ",
+     Cell[BoxData[
+      TemplateBox[{
+        Cell[
+         TextData["GeoBoundsRegion"]], "paclet:ref/GeoBoundsRegion"},
+       "RefLink",
+       BaseStyle->{"InlineFormula"}]], "InlineFormula",
+      FontFamily->"Source Sans Pro",ExpressionUUID->
+      "aecc8700-73db-4c78-8f13-46b5198da326"],
+     " object."
+    }],ExpressionUUID->"880a3c2d-e544-4342-b14b-5bacf1485db7"]}
+  }]], "Usage",
+ CellID->2088706159,ExpressionUUID->"4956f593-4f92-4d75-96b6-036ac306244b"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {
+       TaggingRules, "Openers", "PrimaryExamplesSection"}, Open], 
+      Alternatives[True, Open]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{
+    13.600000000000001`, {4.251494140625001, 9.348505859375}}]],
+  ExpressionUUID->"fb5279d3-b88b-4528-bad2-52c08541e73e"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"534f9bad-4b11-48f9-ae92-387ea3663e12"],
+ "Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "2924291a-062b-42ed-b605-be8349fe99d1"]
+}], "PrimaryExamplesSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellTags->"PrimaryExamplesSection",
+ CellID->2041128190,ExpressionUUID->"864022df-cdab-4e47-8732-5c7c45cea6c3"],
+
+Cell[BoxData[
+ RowBox[{"Needs", "[", "\"\<WolframExternalFunctions`GeoHashLink`\>\"", 
+  "]"}]], "Input", "ExampleInitialization",
+ CellLabel->"In[1]:=",
+ CellID->520474263,ExpressionUUID->"f9292a92-ea28-4abc-ab39-3d239bcd48fd"],
+
+Cell[CellGroupData[{
+
+Cell[TextData[{
+ Cell[BoxData[
+  DynamicBox[ToBoxes[
+    If[
+     MatchQ[
+      CurrentValue[
+       EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"},
+        Closed], 
+      Alternatives[Open, True]], 
+     Style[
+      Graphics[{
+        Thickness[0.18], 
+        RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+        Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+       PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+      0.68 Inherited], 
+     Rotate[
+      Style[
+       Graphics[{
+         Thickness[0.18], 
+         RGBColor[0.8509803921568627, 0.396078431372549, 0], 
+         Line[{{-1.8, 0.5}, {0, 0}, {1.8, 0.5}}]}, AspectRatio -> 1, 
+        PlotRange -> {{-3, 4}, {-1, 1}}, ImageSize -> 20], Magnification -> 
+       0.68 Inherited], Rational[1, 2] Pi, {-1.65, -1}]]],
+   ImageSizeCache->{
+    13.600000000000001`, {4.551318359375001, 9.048681640625}}]],
+  ExpressionUUID->"0a15c82e-ec32-41e9-9a07-4919dab52d80"],
+ Cell[BoxData[
+  TemplateBox[{1},
+   "Spacer1"]],ExpressionUUID->"a4175e9c-1f34-4d61-9c13-ff291b1776b3"],
+ "Basic Examples",
+ "\[NonBreakingSpace]\[NonBreakingSpace]",
+ Cell["(1)", "ExampleCount",ExpressionUUID->
+  "1f5b2a08-e7ff-4829-9052-3193aa91d1aa"]
+}], "ExampleSection", "ExampleSection",
+ WholeCellGroupOpener->True,
+ CacheGraphics->False,
+ CellID->1337712152,ExpressionUUID->"8cd9b104-1153-441c-a093-d54a3318d38e"],
+
+Cell["Encode a GeoPosition:", "ExampleText",
+ CellID->2146825818,ExpressionUUID->"22865646-cb48-42e5-8188-ae1f46f0d41b"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"hash", "=", 
+  RowBox[{"GeoHashEncode", "[", 
+   RowBox[{"Here", ",", "5"}], "]"}]}]], "Input",
+ CellProlog:>Needs["WolframExternalFunctions`GeoHashLink`"],
+ CellLabel->"In[1]:=",
+ CellID->2077224419,ExpressionUUID->"ec130bfb-ac41-44ab-a473-633799479712"],
+
+Cell[BoxData["\<\"dp1k0\"\>"], "Output",
+ CellLabel->"Out[1]=",
+ CellID->1658436229,ExpressionUUID->"4ab8a7c5-36b5-435b-bb4c-d1be2acff5c2"]
+}, Open  ]],
+
+Cell["Decode it:", "ExampleText",
+ CellID->1742241454,ExpressionUUID->"9537476f-311a-43ff-bb46-6cc1b427d76c"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"GeoHashDecode", "[", "hash", "]"}]], "Input",
+ CellProlog:>Needs["WolframExternalFunctions`GeoHashLink`"],
+ CellLabel->"In[2]:=",
+ CellID->728326670,ExpressionUUID->"f632d7f6-2a9d-4d78-81b1-145b24be4b40"],
+
+Cell[BoxData[
+ RowBox[{"\[LeftAssociation]", 
+  RowBox[{
+   RowBox[{"\<\"GeoPosition\"\>", "\[Rule]", 
+    RowBox[{"GeoPosition", "[", 
+     RowBox[{"{", 
+      RowBox[{"40.10009765625`", ",", 
+       RowBox[{"-", "88.22021484375`"}]}], "}"}], "]"}]}], ",", 
+   RowBox[{"\<\"GeoBoundsRegion\"\>", "\[Rule]", 
+    RowBox[{"GeoBoundsRegion", "[", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"40.078125`", ",", "40.1220703125`"}], "}"}], ",", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"-", "88.2421875`"}], ",", 
+         RowBox[{"-", "88.1982421875`"}]}], "}"}]}], "}"}], "]"}]}]}], 
+  "\[RightAssociation]"}]], "Output",
+ CellLabel->"Out[2]=",
+ CellID->1375222576,ExpressionUUID->"43a25d08-07d9-4c0d-a0d5-88120d89f0b1"]
+}, Open  ]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, 
+  Closed]]]]
+}, Dynamic[CurrentValue[
+ EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, 
+  Closed]]]],
+
+Cell[BoxData[GridBox[{
+   {
+    DynamicBox[FEPrivate`ImportImage[
+      FrontEnd`FileName[{"Documentation", "FooterIcons"}, 
+       "RelatedFunction.png"]],
+     ImageSizeCache->{50., {26.47265625, 33.52734375}}], GridBox[{
+      {
+       StyleBox[
+        RowBox[{"See", " ", "Also"}], "SeeAlsoSection"]}
+     }]}
+  }]], "SeeAlsoSection",ExpressionUUID->"67f53776-3c87-4acd-bc2c-\
+2d3031d9edc5"],
+
+Cell[" ", "FooterCell",ExpressionUUID->"23e9476a-3c80-447e-91d8-cd302b296800"]
+},
+Saveable->False,
+ScreenStyleEnvironment->"Working",
+WindowSize->{900, 830},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+WindowTitle->"GeoHashDecode",
+TaggingRules->{
+ "ModificationHighlight" -> False, "ColorType" -> "", "LinkTrails" -> "", 
+  "ExampleCounter" -> 1, 
+  "Openers" -> {
+   "PrimaryExamplesSection" -> Open, "ExampleSection" -> {"0" -> Open}, 
+    "AllOptsTable" -> Closed}, "NewStyles" -> True, 
+  "CitationPopupData" -> $Failed, "ShowCitation" -> False, "HasOptions" -> 
+  True, "RootCaptions" -> "", "HeaderCoreAreaLink" -> {}, 
+  "Metadata" -> {
+   "built" -> "{2024, 3, 12, 17, 6, 39.413943}", 
+    "history" -> {"XX", "", "", ""}, "context" -> 
+    "WolframExternalFunctions`GeoHashLink`", "keywords" -> {}, 
+    "specialkeywords" -> {}, "tutorialcollectionlinks" -> {}, "index" -> True,
+     "label" -> "Wolfram External Functions/ Geo Hash Link Symbol", 
+    "language" -> "en", "paclet" -> "WolframExternalFunctions/GeoHashLink", 
+    "status" -> "None", "summary" -> 
+    "GeoHashDecode[hash] decodes a geohash string into a GeoPosition object \
+and a GeoBoundsRegion object.", "synonyms" -> {}, "tabletags" -> {}, "title" -> 
+    "GeoHashDecode", "titlemodifier" -> "", "metadescription" -> "", 
+    "windowtitle" -> "GeoHashDecode", "type" -> "Symbol", "uri" -> 
+    "WolframExternalFunctions/GeoHashLink/ref/GeoHashDecode"}},
+CellContext->"Global`",
+FrontEndVersion->"14.1 for Mac OS X ARM (64-bit) (March 12, 2024)",
+StyleDefinitions->Notebook[{
+   Cell[
+    StyleData[
+    StyleDefinitions -> FrontEnd`FileName[{"Wolfram"}, "Reference.nb"]]], 
+   Cell[
+    StyleData["Input"], CellContext -> "Global`"], 
+   Cell[
+    StyleData["Output"], CellContext -> "Global`"]}, Visible -> False, 
+  FrontEndVersion -> "14.1 for Mac OS X ARM (64-bit) (March 12, 2024)", 
+  StyleDefinitions -> "Default.nb"],
+ExpressionUUID->"a14895b6-2c8e-4b2c-a580-5c8c4fe681a6"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{
+ "PrimaryExamplesSection"->{
+  Cell[6188, 165, 1438, 38, 34, "PrimaryExamplesSection",ExpressionUUID->"864022df-cdab-4e47-8732-5c7c45cea6c3",
+   CellTags->"PrimaryExamplesSection",
+   CellID->2041128190]}
+ }
+*)
+(*CellTagsIndex
+CellTagsIndex->{
+ {"PrimaryExamplesSection", 13742, 370}
+ }
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[581, 21, 3511, 82, 50, "AnchorBarGrid",ExpressionUUID->"3b6c74ef-1e8d-4243-a5d4-293e77ef54fc",
+ CellID->1],
+Cell[4095, 105, 119, 0, 22, "ContextNameCell",ExpressionUUID->"6285039d-fa31-4eb2-add4-6d21ed5b38b5"],
+Cell[CellGroupData[{
+Cell[4239, 109, 556, 14, 57, "ObjectNameGrid",ExpressionUUID->"6653dc57-179d-41c2-af65-fec763e85f49"],
+Cell[4798, 125, 1353, 35, 106, "Usage",ExpressionUUID->"4956f593-4f92-4d75-96b6-036ac306244b",
+ CellID->2088706159]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6188, 165, 1438, 38, 34, "PrimaryExamplesSection",ExpressionUUID->"864022df-cdab-4e47-8732-5c7c45cea6c3",
+ CellTags->"PrimaryExamplesSection",
+ CellID->2041128190],
+Cell[7629, 205, 228, 4, 29, "Input",ExpressionUUID->"f9292a92-ea28-4abc-ab39-3d239bcd48fd",
+ CellID->520474263],
+Cell[CellGroupData[{
+Cell[7882, 213, 1416, 37, 29, "ExampleSection",ExpressionUUID->"8cd9b104-1153-441c-a093-d54a3318d38e",
+ CellID->1337712152],
+Cell[9301, 252, 120, 1, 37, "ExampleText",ExpressionUUID->"22865646-cb48-42e5-8188-ae1f46f0d41b",
+ CellID->2146825818],
+Cell[CellGroupData[{
+Cell[9446, 257, 279, 6, 28, "Input",ExpressionUUID->"ec130bfb-ac41-44ab-a473-633799479712",
+ CellID->2077224419],
+Cell[9728, 265, 139, 2, 36, "Output",ExpressionUUID->"4ab8a7c5-36b5-435b-bb4c-d1be2acff5c2",
+ CellID->1658436229]
+}, Open  ]],
+Cell[9882, 270, 109, 1, 37, "ExampleText",ExpressionUUID->"9537476f-311a-43ff-bb46-6cc1b427d76c",
+ CellID->1742241454],
+Cell[CellGroupData[{
+Cell[10016, 275, 228, 4, 28, "Input",ExpressionUUID->"f632d7f6-2a9d-4d78-81b1-145b24be4b40",
+ CellID->728326670],
+Cell[10247, 281, 760, 20, 52, "Output",ExpressionUUID->"43a25d08-07d9-4c0d-a0d5-88120d89f0b1",
+ CellID->1375222576]
+}, Open  ]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "ExampleSection", "0"}, Closed]]]]
+}, Dynamic[CurrentValue[EvaluationNotebook[], {TaggingRules, "Openers", "PrimaryExamplesSection"}, Closed]]]],
+Cell[11249, 310, 396, 11, 112, "SeeAlsoSection",ExpressionUUID->"67f53776-3c87-4acd-bc2c-2d3031d9edc5"],
+Cell[11648, 323, 78, 0, 24, "FooterCell",ExpressionUUID->"23e9476a-3c80-447e-91d8-cd302b296800"]
+}
+]
+*)
+
+(* End of internal cache information *)
+
